@@ -41,7 +41,7 @@ public class Bumper {
     private var features: [BumperFeature.Type] = []
 
     var bumperViewData: [BumperViewData] {
-        return features.flatMap { featureType in
+        return features.compactMap { featureType in
             let value = self.value(for: featureType.key) ?? featureType.defaultValue
             return BumperViewData(key: featureType.key, description: featureType.description, value: value, options: featureType.values)
         }
