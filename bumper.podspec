@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'bumper'
-  s.version          = '1.1.0'
+  s.version          = '1.2.0'
   s.summary          = 'A/B Testing debug helper framework for iOS'
   s.description      = <<-DESC
     Letgo Feature flags library.
@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => "git@github.com:letgoapp/bumper.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/letgo'
 
-  s.ios.deployment_target = '8.0'
-  s.platform     = :ios, '8.0'
+  s.ios.deployment_target = '9.0'
+  s.platform     = :ios, '9.0'
   s.requires_arc = true
 
 
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
     rx.dependency 'bumper/Core'
     rx.xcconfig =  
         { 'OTHER_SWIFT_FLAGS' => '$(inherited) -D RX_BUMPER' }
-    rx.dependency 'RxSwift', '~> 4.1'
-    rx.dependency 'RxCocoa', '~> 4.1'
+    rx.dependency 'RxSwift', '~> 5.0'
+    rx.dependency 'RxCocoa', '~> 5.0'
   end
 end

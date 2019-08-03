@@ -127,7 +127,7 @@ extension BumperViewController: UITableViewDelegate, UITableViewDataSource {
 
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 50
     }
 
@@ -157,7 +157,7 @@ extension BumperViewController: BumperViewModelDelegate {
     }
 
     func showFeature(_ feature: Int, title: String, itemsSelection items: [String]) {
-        let style: UIAlertControllerStyle = UIDevice.current.userInterfaceIdiom == .pad ? .alert : .actionSheet
+        let style: UIAlertController.Style = UIDevice.current.userInterfaceIdiom == .pad ? .alert : .actionSheet
         let alert = UIAlertController(title: title, message: nil, preferredStyle: style)
         for item in items {
             let action = UIAlertAction(title: item, style: .default) { [weak self] _ in

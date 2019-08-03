@@ -1,6 +1,6 @@
 {
   "name": "bumper",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "summary": "A/B Testing debug helper framework for iOS",
   "description": "Letgo Feature flags library.\nIt not only allows Enabling/disabling parts of the code but select several cases for that parts.\nIncludes a ruby script that generates all boilerplate for all A/B tests from a json file that\ncontains the info.",
   "homepage": "https://github.com/letgoapp/bumper",
@@ -14,11 +14,11 @@
   },
   "source": {
     "git": "git@github.com:letgoapp/bumper.git",
-    "tag": "1.1.0"
+    "tag": "1.2.0"
   },
   "social_media_url": "https://twitter.com/letgo",
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "requires_arc": true,
   "default_subspecs": "Core",
@@ -38,10 +38,10 @@
 
         ],
         "RxSwift": [
-          "~> 4.1"
+          "~> 5.0"
         ],
         "RxCocoa": [
-          "~> 4.1"
+          "~> 5.0"
         ]
       },
       "xcconfig": {
